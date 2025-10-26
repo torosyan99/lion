@@ -1780,6 +1780,10 @@ h5 {
 }
 
 @media (max-width: 420px) {
+    .top {
+        background: url(../images/background-m.webp) center center/cover no-repeat;
+    }
+
     .footer {
         background: url("../images/footer-bg-m.webp") no-repeat center bottom/100% 50% ;
     }
