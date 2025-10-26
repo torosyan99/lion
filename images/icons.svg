@@ -342,6 +342,34 @@
             </linearGradient>
         </defs>
     </symbol>
+    <symbol id="line-2" viewBox="0 0 1920 60" fill="none">
+            <path d="M986 32L958 4L930 32L958 60L986 32Z" fill="#F3ECE0"/>
+            <path d="M958.5 41.5L968.5 31.5L958.5 21.5L948.5 31.5L958.5 41.5Z" fill="#483E37"/>
+            <path d="M1919.5 30H985.5L958.5 3L931.5 30H0" stroke="url(#paint0_linear_1_533)" stroke-width="4"/>
+            <defs>
+                <linearGradient id="paint0_linear_1_533" x1="255" y1="16.5" x2="1665" y2="16.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E6B52F" stop-opacity="0"/>
+                    <stop offset="0.5" stop-color="#E6B52F"/>
+                    <stop offset="1" stop-color="#E6B52F" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+    </symbol>
+
+    <symbol id="line-3" viewBox="0 0 1410 34" fill="none">
+        <path d="M703.531 30.1084L724.094 9.5459H682.969L703.531 30.1084Z" fill="#F3ECE0"/>
+        <path d="M703.899 2.5708L711.243 9.91455L703.899 17.2583L696.555 9.91455L703.899 2.5708Z" fill="#3BB933"/>
+        <path d="M1409.63 11.0156H723.727L703.898 30.8438L684.07 11.0156H0" stroke="url(#paint0_linear_1_253)" stroke-width="2.9375"/>
+        <defs>
+            <linearGradient id="paint0_linear_1_253" x1="187.266" y1="20.9297" x2="1222.73" y2="20.9297" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E6B52F" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#E6B52F"/>
+                <stop offset="1" stop-color="#E6B52F" stop-opacity="0"/>
+            </linearGradient>
+        </defs>
+    </symbol>
+
+
+
 
     <symbol id="ps5"   viewBox="0 0 23 20" fill="none">
         <path d="M17.0227 8.75024C17.0227 9.30253 16.575 9.75024 16.0227 9.75024C15.4704 9.75024 15.0227 9.30253 15.0227 8.75024C15.0227 8.19796 15.4704 7.75024 16.0227 7.75024C16.575 7.75024 17.0227 8.19796 17.0227 8.75024Z" fill="var(--secondary-color)" fill-opacity="0.5"/>

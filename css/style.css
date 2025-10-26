@@ -103,47 +103,46 @@ svg {
     flex-shrink: 0
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'BeaufortForLOL', sans-serif
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 80px
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 60px
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 50px
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 40px
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 30px
 }
 
 h6 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700
 }
-
 
 .container {
     max-width: 1470px;
     padding: 0 30px;
     margin: 0 auto
+}
+
+
+.main {
+    overflow-x: hidden;
 }
 
 .button {
@@ -160,64 +159,60 @@ h6 {
     line-height: normal;
     text-transform: uppercase;
     font-family: 'BeaufortForLOL', serif;
-    padding: 0 10px 3px;
     text-align: center;
-    transition: .4s all linear;
+    transition: .4s all linear
 }
 
 .button:hover {
-    font-size: 24px;
+    font-size: 24px
 }
 
 .button::after {
-    content: url("../images/arrow-black.svg");
-    right: 0;
+    content: url(../images/arrow-black.svg);
+    right: 0
 }
 
 .button::before {
-    content: url("../images/arrow-black-left.svg");
-    left: 0;
+    content: url(../images/arrow-black-left.svg);
+    left: 0
 }
 
 .button.white::after {
-    content: url("../images/arrow-white.svg");
-    right: 0;
+    content: url(../images/arrow-white.svg);
+    right: 0
 }
 
 .button.white::before {
-    content: url("../images/arrow-white-left.svg");
-    left: 0;
+    content: url(../images/arrow-white-left.svg);
+    left: 0
 }
 
-
-.button::after,
-.button::before {
+.button::after, .button::before {
     transform: translateY(-50%);
     position: absolute;
     top: 50%;
-    height: 26px;
+    height: 26px
 }
-
 
 .button.col {
     flex-direction: column;
     align-items: center;
     line-height: 1;
-    gap: 4px;
+    gap: 2px
 }
 
 .button__top {
     display: flex;
     gap: 10px;
-    font-size: 20px;
+    font-size: 20px
 }
 
 .button__top + span {
-    font-size: 13px;
+    font-size: 13px
 }
 
 .button__bg {
-   width: calc(100% - 20px);
+    width: calc(100% - 20px);
     position: absolute;
     height: 100%;
     top: 0;
@@ -285,7 +280,7 @@ h6 {
 }
 
 .header__socials {
-    margin-left: auto;
+    margin-left: auto
 }
 
 .header__profile-mobile, .header__menu-button, .header__close {
@@ -293,7 +288,7 @@ h6 {
 }
 
 .header__profile {
-    width: 218px;
+    width: 218px
 }
 
 .socials {
@@ -418,31 +413,29 @@ h6 {
     margin: 53px auto 0;
     font-size: 36px;
     position: relative;
-    z-index: 20;
+    z-index: 20
 }
 
 .top__button:hover {
-    font-size: 40px;
+    font-size: 40px
 }
 
 .top__button::after {
-    content: url("../images/arrow-black-two.svg");
+    content: url(../images/arrow-black-two.svg);
     height: 116px;
-    right:-10px
+    right: -10px
 }
 
 .top__button::before {
-    content: url("../images/arrow-black-two-left.svg");
+    content: url(../images/arrow-black-two-left.svg);
     height: 116px;
-    left:-10px
+    left: -10px
 }
 
 .top__button .button__bg {
-    width: calc( 100% - 56px);
-    left: 28px;
+    width: calc(100% - 56px);
+    left: 28px
 }
-
-
 
 .top__info {
     display: flex;
@@ -451,14 +444,14 @@ h6 {
     position: absolute;
     left: 30px;
     top: 23px;
-    right: 30px;
+    right: 30px
 }
 
 .top__date-block {
     width: fit-content;
     margin-left: auto;
     border-radius: 100px;
-    margin-bottom: 11px;
+    margin-bottom: 11px
 }
 
 .top__date {
@@ -518,11 +511,11 @@ h6 {
 
 .about {
     transform: translateY(-10px);
-    padding-bottom: 113px;
+    padding-bottom: 113px
 }
 
 .about__title {
-    text-align: center;
+    text-align: center
 }
 
 .about__subtitle {
@@ -531,25 +524,25 @@ h6 {
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .about__content {
-    margin-top: 67px;
-    position: relative;
+    margin-top: 64px;
+    position: relative
 }
 
 .about__list {
     width: 570px;
-    margin-top: 28px;
+    margin-top: 26px;
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 19px
 }
 
 .about__item {
     padding-bottom: 20px;
-    border-bottom: 1px solid #C6BEB3;
+    border-bottom: 1px solid #C6BEB3
 }
 
 .about__item-button {
@@ -561,31 +554,31 @@ h6 {
     font-weight: 500;
     font-family: 'BeaufortForLOL', serif;
     text-transform: uppercase;
-    --secondary-color: #C6BEB3;
+    --secondary-color: #C6BEB3
 }
 
 .about__item.active {
     border-bottom: 1px solid var(--brown-color);
-    color: var(--brown-color);
+    color: var(--brown-color)
 }
 
 .about__item.active .about__item-button > svg {
-    --secondary-color: #CF6509;
+    --secondary-color: #CF6509
 }
 
 .about__wrapper {
     height: 0;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .about__text {
     padding-top: 12px;
     color: var(--primary-color);
-    line-height: 150%;
+    line-height: 150%
 }
 
 .about__item.active .about__wrapper {
-    height: auto;
+    height: auto
 }
 
 .about__box {
@@ -596,15 +589,16 @@ h6 {
     position: absolute;
     right: 0;
     top: -7px;
-    left: 600px;
+    left: 600px
 }
 
 .about__box-image {
     width: 100%;
+    height: 100%
 }
 
 .about__item.active .about__box {
-    display: block;
+    display: block
 }
 
 .about__navigation {
@@ -614,94 +608,109 @@ h6 {
     right: 20px;
     display: flex;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 10
 }
 
-
-.about__swiper-next:hover,
-.about__swiper-prev:hover,
-.about__item-button:hover {
-    --secondary-color: #CF6509;
+.about__swiper-next:hover, .about__swiper-prev:hover, .about__item-button:hover {
+    --secondary-color: #CF6509
 }
 
 .about__buttons {
     margin-top: 37px;
     display: flex;
-    gap: 10px 19px;
+    gap: 10px 19px
 }
 
 .about__button:first-child {
-    width: 299px;
+    width: 299px
 }
+
 .about__button:last-child {
-    width: 235px;
+    width: 235px
+}
+
+.line-top, .line-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    overflow: hidden
 }
 
 .line-top {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    right: 0;
+    top: -15px
+}
+
+.line-bottom {
+    bottom: -30px
+}
+
+.line-top svg, .line-bottom svg {
+    min-width: 1920px
 }
 
 .game-start {
     position: relative;
     padding: 121px 0 140px;
-    background: url("../images/background-game-start.webp") no-repeat center center / cover;
+    background: url(../images/background-game-start.webp) no-repeat center center / cover;
     color: var(--secondary-color);
-    text-align: center;
+    text-align: center
 }
 
 .game-start__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px 30px;
+    grid-template-columns:1fr 1fr;
+    gap: 60px 30px
 }
 
 .game-start__top-button {
     max-width: 628px;
-    margin: 24px auto 41px;
+    margin: 24px auto 39px;
     font-size: 30px;
     height: 100px;
+    padding-left: 24px
 }
 
 .game-start__top-button .button__bg {
     left: 32px;
-    width: calc( 100% - 64px);
+    width: calc(100% - 64px)
 }
 
 .game-start__top-button:hover {
-    font-size: 34px;
+    font-size: 34px
 }
 
 .game-start__top-button::after {
-    content: url("../images/arrow-white-two-right.svg");
+    content: url(../images/arrow-white-two-right.svg);
     height: 84px;
-    right: 0;
+    right: 0
 }
 
 .game-start__top-button::before {
-    content: url("../images/arrow-white-two-left.svg");
+    content: url(../images/arrow-white-two-left.svg);
     height: 84px;
-    left: 0;
+    left: 0
 }
 
 .game-start__block {
     padding: 10px;
     border-radius: 25px;
-    border: 1px solid rgba(230, 181, 47, 0.50);
+    border: 1px solid rgb(230 181 47 / .5)
 }
 
 .game-start__box {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.50);
-    border-radius: 20px;
+    background: rgb(0 0 0 / .5);
+    border-radius: 20px
 }
 
 .game-start__list {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 7px
 }
 
 .game-start__link {
@@ -713,55 +722,392 @@ h6 {
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--secondary-color)
 }
 
 .game-start__link:hover {
-    background: rgba(230, 181, 47, 0.50);
+    background: rgb(230 181 47 / .5)
 }
 
 .game-start__first-text {
-    margin-top: 40px;
     font-family: 'BeaufortForLOL', serif;
     font-size: 20px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .game-start__text {
-    margin-top: 14px;
+    margin-top: 9px;
     color: var(--secondary-color);
+    line-height: 150%
 }
 
 .game-start__text span {
     color: #FFDA44;
-    display: block;
+    display: block
 }
 
 .game-start__buttons {
     display: flex;
     gap: 30px;
-    margin-top: 43px;
+    margin-top: 43px
 }
 
 .game-start__button {
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 .game-start__clients {
-    margin-top: 40px;
+    margin-top: 19px
 }
 
 .game-start__clients .game-start__buttons {
     justify-content: center;
     gap: 0 8px;
-    margin-top: 25px;
+    margin-top: 25px
 }
 
 .game-start__gray-button {
     min-width: 168px;
-    height: 50px;
+    height: 50px
+}
 
+.sets {
+    padding: 128px 0 138px;
+    background: url(../images/background-sets.webp) no-repeat center center / cover;
+    position: relative
+}
+
+.sets__title {
+    text-align: center
+}
+
+.sets__list {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 25px;
+    gap: 30px
+}
+
+.sets__item {
+    border: 1px solid #C6BEB3;
+    color: var(--secondary-color)
+}
+
+.sets__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 20px
+}
+
+.sets__item:first-child {
+    border: 1px solid var(--brown-color)
+}
+
+.sets__item:first-child .sets__box {
+    background: rgb(52 52 52 / .5)
+}
+
+.sets__item:nth-child(2) .sets__box {
+    background: rgb(120 56 0 / .5)
+}
+
+.sets__item:last-child .sets__box {
+    background: rgb(54 24 90 / .5)
+}
+
+.sets__item-button {
+    max-width: 189px;
+    width: 100%
+}
+
+.sets__item-button .button__bg {
+    width: 100%;
+    left: 0
+}
+
+.sets__item-button::after {
+    transform: translateY(-50%) translateX(141%)
+}
+
+.sets__item-button::before {
+    transform: translateY(-50%) translateX(-141%)
+}
+
+.media {
+    padding-top: 140px;
+    position: relative
+
+}
+
+.media__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #C6BEB3
+}
+
+.media__switcher-button {
+    padding: 20px 40px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "BeaufortForLOL", serif;
+    color: rgb(56 56 55 / .5)
+}
+
+.media__switcher-button.active {
+    color: #CF6509;
+    position: relative
+}
+
+.media__switcher-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    background-color: #CF6509;
+    height: 2px
+}
+
+.media__content {
+    margin-top: 40px
+}
+
+.media__item {
+    display: none
+}
+
+.media__image {
+    width: 100%;
+}
+
+.media__item.active {
+    display: block
+}
+
+.media__slide {
+    border: 1px solid #C6BEB3
+}
+
+.media__swiper-wrapper {
+    max-width: 1580px;
+    display: flex;
+    padding: 0 21.5px;
+    gap: 30px
+}
+
+.media__swiper-prev, .media__swiper-next {
+    flex-shrink: 0;
+    --secondary-color: #C6BEB3;
+}
+
+.media__swiper-prev:hover, .media__swiper-next:hover {
+    --secondary-color: #CF6509
+}
+
+.media__box {
+    margin-top: 90px;
+    padding: 40px 40px 53px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #2C1E15 0%, #846D4D 100%);
+    text-align: center;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 10;
+}
+
+.media__box-text {
+    margin: 4px auto 0;
+    max-width: 550px;
+    line-height: 150%
+}
+
+.media__box-button {
+    width: 218px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%)
+}
+
+.media__box .line-top {
+    top: -11px
+}
+
+.media__box-image-1, .media__box-image-2 {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.media__box-image-1 {
+    left: 83px
+}
+
+.media__box-image-2 {
+    right: 40px
+}
+
+.media__bg-image {
+    position: absolute;
+    z-index: -1
+}
+
+.media__bg-image:first-child, .media__bg-image:nth-child(2) {
+    top: 71px
+}
+
+.media__bg-image:first-child {
+    left: -39px
+}
+
+.media__bg-image:nth-child(2) {
+    right: -39px
+}
+
+.media__bg-image:nth-child(4), .media__bg-image:nth-child(3) {
+    bottom: 45px
+}
+
+.media__bg-image:nth-child(3) {
+    left: 20px
+}
+
+.media__bg-image:nth-child(4) {
+    right: 20px
+}
+
+.news {
+    padding: 160px 0 140px;
+}
+
+.news__inner {
+    display: grid;
+    grid-template-columns: calc(50% - 15px)  calc(50% - 15px);
+    gap: 30px;
+}
+
+.news__title {
+    margin-bottom: 40px;
+}
+
+.news__tg {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__block {
+    flex-grow: 1;
+    border: 1px solid #C6BEB3;
+}
+
+.news__block div {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+.news__link {
+    display: block;
+    padding-right: 29px;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C6BEB3;
+    --secondary-color: #C6BEB3;
+    padding-top: 24px;
+}
+
+.news__item:first-child .news__link {
+    padding-top: 0;
+}
+
+.news__link-name {
+    display: block;
+    max-width: 660px;
+    font-family: "BeaufortForLOL", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    white-space: nowrap; /* Не переносить текст */
+    overflow: hidden; /* Скрывать лишнее */
+    text-overflow: ellipsis;
+}
+
+.news__link-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.news__link:hover {
+    --secondary-color: #CF6509;
+
+}
+
+.news__link-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.news__date {
+    color: rgba(44, 44, 44, 0.50);
+    font-size: 14px;
+}
+
+.footer {
+    padding: 80px 0;
+    background: url('../images/background-footer.png') no-repeat top left / cover;
+}
+
+.footer__descr {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(44, 44, 44, 0.75);
+}
+
+.footer__inner {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, auto);
+}
+
+.footer__block-top {
+    color: #2C2C2C;
+    font-family: "BeaufortForLOL", serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media (max-width: 1700px) {
+    .media__bg-image:first-child, .media__bg-image:nth-child(2) {
+        top: 380px;
+    }
+
+    .media__bg-image:nth-child(4), .media__bg-image:nth-child(3) {
+        bottom: -80px
+    }
 }
 
 @media (max-width: 1360px) {
@@ -782,15 +1128,15 @@ h6 {
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 40px
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 30px
     }
 
     h4 {
-        font-size: 24px;
+        font-size: 24px
     }
 
     .body-overflow {
@@ -798,8 +1144,9 @@ h6 {
         overflow: hidden
     }
 
+
     .logo__img {
-        width: 45px;
+        width: 45px
     }
 
     .header__inner {
@@ -855,7 +1202,7 @@ h6 {
     }
 
     .top__logo {
-        width: 308px;
+        width: 308px
     }
 
     .top__inner::after {
@@ -937,174 +1284,340 @@ h6 {
     }
 
     .top__button {
-        margin-top: 26px;
+        margin-top: 27px;
         width: 235px;
         font-size: 20px;
-        height: 66px;
+        height: 66px
     }
+
     .top__button:hover {
-        font-size: 24px;
+        font-size: 24px
     }
 
     .top__button .button__bg {
         width: calc(100% - 20px);
-        left: 10px;
+        left: 10px
     }
+
     .top__button::after {
-        content: url("../images/arrow-black.svg");
+        content: url(../images/arrow-black.svg);
         height: 26px;
         right: 0
     }
 
     .top__button::before {
-        content: url("../images/arrow-black-left.svg");
+        content: url(../images/arrow-black-left.svg);
         height: 26px;
         left: 0
     }
 
-
     .about {
-        padding-bottom: 50px;
+        padding-bottom: 37px;
+        transform: translateY(-13px)
     }
 
     .about__list {
-        width: 300px;
+        width: 300px
     }
 
     .about__subtitle {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .about__box {
         left: 315px;
+        max-height: 400px
     }
 
     .about__subtitle {
-        margin-top: 0;
+        margin-top: 0
     }
 
     .about__content {
-        margin-top: 32px;
+        margin-top: 32px
     }
 
     .about__box {
         border-radius: 25px;
         padding: 10px;
-        top: -11px;
+        top: -11px
     }
 
     .about__box-image {
-        border-radius: 20px;
+        max-height: 380px;
+        border-radius: 20px
     }
 
     .about__navigation {
         top: 39%;
         left: 28px;
-        right: 22px;
+        right: 22px
     }
 
     .about__list {
         gap: 9.3px;
-        margin-top: 11px;
+        margin-top: 11px
     }
 
     .about__item {
-        padding-bottom: 10px;
+        padding-bottom: 10px
     }
 
     .about__item > svg {
         width: 19px;
-        height: 24px;
+        height: 24px
     }
 
     .about__item-button {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .about__text {
         padding-top: 6px;
         font-size: 14px;
-        line-height: 142%;
+        line-height: 142%
     }
 
     .about__buttons {
-        margin-top: 14px;
-        justify-content: center;
+        margin-top: 11px;
+        justify-content: center
+    }
+
+    .line-top {
+        top: -6px
+    }
+
+    .line-bottom {
+        bottom: -10px
+    }
+
+    .line-top svg, .line-bottom svg {
+        min-width: 768px
     }
 
     .game-start {
-        padding: 61px 9px;
+        padding: 61px 9px
     }
 
     .game-start__content {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr
     }
 
     .game-start__list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: start;
+        grid-template-columns:1fr 1fr 1fr;
+        text-align: start
     }
 
-
-    .game-start__list  .game-start__block {
-        padding: 5px;
+    .game-start__list .game-start__block {
+        padding: 5px
     }
-
 
     .game-start__link {
         font-size: 16px;
         gap: 5px;
         height: 100%;
-        padding: 10px 15px;
+        padding: 10px 15px
     }
 
     .game-start__top-button {
         height: 66px;
         font-size: 20px;
         max-width: 379px;
-        margin: 16px auto 15px;
-        padding-right: 21px;
+        margin: 9px auto 20px;
+        padding-right: 21px
     }
 
     .game-start__top-button:hover {
-        font-size: 24px;
+        font-size: 24px
     }
 
     .game-start__download > .game-start__top-button {
-        margin: 15px auto 0;
-        padding-right: 2px;
+        margin: 12px auto 0;
+        padding-right: 2px
     }
 
     .game-start__first-text {
-        margin-top: 18px;
+        margin-top: 18px
     }
 
     .game-start__buttons {
-        margin-top: 24px;
+        margin-top: 20px
     }
 
     .game-start__clients {
-        margin-top: 21px;
+        margin-top: 21px
+    }
+
+    .game-start__clients .game-start__buttons {
+        margin-top: 20px
     }
 
     .game-start__top-button {
-        max-width: 379px;
+        max-width: 379px
     }
 
     .game-start__top-button .button__bg {
         width: calc(100% - 20px);
-        left: 10px;
+        left: 10px
     }
 
     .game-start__top-button::after {
-        content: url("../images/arrow-white.svg");
-        height: 26px;
+        content: url(../images/arrow-white.svg);
+        height: 26px
     }
 
     .game-start__top-button::before {
-        content: url("../images/arrow-white-left.svg");
-        height: 26px;
+        content: url(../images/arrow-white-left.svg);
+        height: 26px
+    }
+
+    .sets {
+        padding: 56px 0 71px
+    }
+
+    .sets__list {
+        gap: 15px;
+        margin-top: 14px
+    }
+
+    .sets__image {
+        width: 100px
+    }
+
+    .sets__box {
+        padding: 20px 4px
+    }
+
+    .sets__item-title {
+        font-size: 24px
+    }
+
+    .sets__button {
+        max-width: 198px
+    }
+
+    .media {
+        padding-top: 58px;
+    }
+
+    .media__switcher-button {
+        font-size: 18px;
+        padding: 14px 39px 11px;
+    }
+
+    .media__swiper-wrapper {
+        gap: 15px;
+    }
+
+    .media__bg-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .media__bg-image:first-child,
+    .media__bg-image:nth-child(2) {
+        top: 266px;
+    }
+
+    .media__bg-image:first-child {
+        left: -33px;
+    }
+
+
+    .media__bg-image:nth-child(3) {
+        left: -5px;
+    }
+
+    .media__bg-image:nth-child(4) {
+        right: -5px;
+    }
+
+    .media__bg-image:nth-child(2) {
+        right: -40px;
+    }
+
+    .media__bg-image:nth-child(3),
+    .media__bg-image:nth-child(4) {
+        bottom: -74px;
+    }
+
+    .media__box-image-1,
+    .media__box-image-2 {
+        width: 155px;
+    }
+
+    .media__box-image-1 {
+        left: 0;
+    }
+
+    .media__box-image-2 {
+        right: 0;
+    }
+
+
+    .media__content {
+        margin-top: 21px;
+    }
+
+    .media__slide {
+        padding: 5px;
+    }
+
+    .media__box {
+        margin-top: 43px;
+        padding: 40px 40px 57px;
+    }
+
+    .media__box-text {
+        font-size: 14px;
+        max-width: 500px;
+    }
+
+    .news__inner {
+        display: grid;
+        grid-template-columns: calc(50% - 15px)  calc(50% - 15px);
+        gap: 15px;
+    }
+
+    .news__title {
+        margin-bottom: 20px;
+    }
+
+
+    .news__link-top {
+        margin-bottom: 5px;
+    }
+
+    .news__title {
+        text-wrap: nowrap;
+    }
+
+    .news__link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .news__link-name {
+        font-size: 18px;
+    }
+
+    .footer__inner {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 40px 20px;
+    }
+
+    .footer__block-top {
+        font-size: 16px;
+    }
+
+    .footer__descr {
+        margin-top: 20px;
+    }
+
+    .footer__link {
+        font-size: 14px;
     }
 }
 
@@ -1114,10 +1627,11 @@ h6 {
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 35px
     }
+
     h3 {
-        font-size: 30px;
+        font-size: 30px
     }
 
     .container {
@@ -1180,7 +1694,7 @@ h6 {
     }
 
     .top__logo {
-        width: 224px;
+        width: 224px
     }
 
     .top__info {
@@ -1205,76 +1719,180 @@ h6 {
         display: none
     }
 
+    .about {
+        padding-bottom: 31px
+    }
+
     .about__list {
-        width: 100%;
+        width: 100%
     }
 
     .about__box {
-        position: static;
+        position: static
     }
 
     .about__buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .about__title span {
-        display: block;
+        display: block
     }
 
     .about__box {
-        margin-top: 7px;
+        margin-top: 7px
     }
 
     .about__navigation {
         left: 13px;
-        right: 9px;
+        right: 9px
     }
 
     .about__list {
-        gap: 8.9px;
+        gap: 8.9px
     }
 
     .about__buttons {
-        margin-top: 7px;
+        margin-top: 7px
     }
 
     .game-start {
         padding: 30px 0 34px;
+        background: url(../images/background-game-start-t.webp) no-repeat center center / cover
+
     }
 
+
     .game-start__list {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
+        gap: 4px
     }
 
     .game-start__download > .game-start__buttons {
-        flex-direction: column;
+        flex-direction: column
     }
 
+    .game-start__box {
+        padding: 20px 15px
+    }
 
     .game-start__block {
-        padding: 5px;
+        padding: 5px
     }
+
     .game-start__clients .game-start__buttons {
         gap: 10px 0;
-        justify-content: center;
+        justify-content: center
     }
+
     .game-start__buttons {
         align-items: center;
+        margin-top: 25px;
+        gap: 8px
     }
-
 
     .game-start__download .game-start__box {
-        padding: 20px 7px 20px;
+        padding: 20px 7px 20px
     }
-
 
     .game-start__button {
         max-width: 331px;
-        width: 100%;
-
+        width: 100%
     }
 
+    .game-start__top-button {
+        padding: 0 10px
+    }
+
+    .game-start__content {
+        gap: 27px
+    }
+
+    .game-start__top-button::after {
+        transform: translateY(-50%) translateX(100%)
+    }
+
+    .game-start__top-button::before {
+        transform: translateY(-50%) translateX(-100%)
+    }
+
+    .game-start__top-button .button__bg {
+        width: 100%;
+        left: 0
+    }
+
+    .sets {
+        padding: 28px 0 30px
+    }
+
+    .sets__list {
+        grid-template-columns:1fr;
+        margin-top: 9px
+    }
+
+    .media__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .media__switchers {
+        width: 100%;
+        display: flex;
+    }
+
+
+    .media__switcher-button {
+        padding: 0 20px 20px;
+        flex-grow: 1
+    }
+
+
+    .media__swiper-wrapper {
+        max-width: 500px;
+        padding: 0 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .media__swiper-prev {
+        order: 1;
+    }
+
+    .media__swiper-next {
+        order: 1;
+    }
+
+    .media__box-image-1,
+    .media__box-image-2 {
+        width: 96px;
+    }
+
+    .media__box {
+        padding: 20px 40px 40px;
+    }
+
+    .media__bg-image {
+        display: none;
+    }
+
+    .news__inner {
+        grid-template-columns: 100%;
+    }
+
+    .news__block {
+        height: 310px;
+    }
+
+    .footer__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__socials {
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -1304,6 +1922,6 @@ h6 {
     }
 
     .game-start__download .game-start__buttons {
-        flex-direction: column;
+        flex-direction: column
     }
 }
