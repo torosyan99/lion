@@ -1,4 +1,7 @@
-.button, .header__link, .top__box-bottom, .top__list, h1, h2, h3, h4, h5, h6 {
+.button,
+.header__link,
+.top__box-bottom,
+.top__list, h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase
 }
 
@@ -30,7 +33,10 @@ img, input[type=file], svg {
     font-style: normal
 }
 
-.about__item-button:hover, .about__item.active .about__item-button > svg, .about__swiper-next:hover, .about__swiper-prev:hover, .media__swiper-next:hover, .media__swiper-prev:hover, .news__link:hover {
+.about__item-button:hover,
+.about__item.active .about__item-button > svg,
+.about__swiper-next:hover, .about__swiper-prev:hover,
+.media__swiper-next:hover, .media__swiper-prev:hover, .news__link:hover {
     --secondary-color: #CF6509
 }
 
@@ -38,7 +44,8 @@ img, input[type=file], svg {
     --page-bg: #F3ECE0;
     --primary-color: #2C2C2C;
     --secondary-color: #FFF;
-    --brown-color: #7B4029
+    --brown-color: #7B4029;
+    --gray-color: #C6BEB3;
 }
 
 * {
@@ -55,7 +62,7 @@ a, a:hover, a:link, a:visited {
     text-decoration: none
 }
 
-.about__item.active .about__box, .game-start__text span, .media__item.active, aside, footer, header, legend, main, nav, section {
+.about__item.active .about__block, .game-start__text span, .media__item.active, aside, footer, header, legend, main, nav, section {
     display: block
 }
 
@@ -277,6 +284,7 @@ h5 {
     gap: 10px
 }
 
+
 .top__box-bottom, .top__list {
     font-weight: 700
 }
@@ -339,21 +347,16 @@ h5 {
     gap: 20px
 }
 
-.border-block {
+.border {
     border-radius: 25px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--gray-color);
     padding: 10px
 }
 
-.box {
-    padding: 20px;
+.border > * {
     border-radius: 20px;
-    background: rgb(44 44 44 / .75)
 }
 
-.box.blue {
-    background: rgb(88 101 242 / .75)
-}
 
 .top {
     overflow: hidden;
@@ -377,12 +380,17 @@ h5 {
     background: linear-gradient(90deg, #fff0 0, #2c1616 50%, #fff0 100%)
 }
 
+.top__block,
+.top__date-block {
+    border: 1px solid var(--secondary-color);
+}
+
 .top__title {
     margin-top: 7px
 }
 
 .top__list {
-    margin-top: 8px;
+    margin-top: 10px;
     flex-direction: column;
     gap: 10px;
     font-size: 24px
@@ -463,7 +471,13 @@ h5 {
 }
 
 .top__box {
-    width: 340px
+    width: 340px;
+    padding: 20px;
+    background: rgb(44 44 44 / .75)
+}
+
+.top__box.blue {
+    background: rgb(88 101 242 / .75)
 }
 
 .top__online, .top__status {
@@ -529,15 +543,15 @@ h5 {
 
 .about__list {
     width: 570px;
-    margin-top: 26px;
+    margin-top: 31px;
     display: flex;
     flex-direction: column;
-    gap: 19px
+    gap: 20px
 }
 
 .about__item {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c6beb3
+    padding-bottom: 19px;
+    border-bottom: 1px solid var(--gray-color)
 }
 
 .about__item-button {
@@ -545,7 +559,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    --secondary-color: #C6BEB3
+    --secondary-color: var(--gray-color)
 }
 
 .about__item.active {
@@ -562,18 +576,15 @@ h5 {
     line-height: 150%
 }
 
-.about__box {
+.about__block {
     display: none;
-    border: 1px solid #c6beb3;
-    border-radius: 25px;
-    padding: 10px;
     position: absolute;
     right: 0;
     top: -7px;
     left: 600px
 }
 
-.about__box-image {
+.about__image {
     width: 100%;
     height: 100%
 }
@@ -622,11 +633,13 @@ h5 {
 }
 
 .line-bottom svg, .line-top svg {
-    min-width: 1920px
+    min-width: 1920px ;
+    max-width: 1920px
+
 }
 
 .game-start {
-    padding: 121px 0 140px;
+    padding: 121px 0 142px;
     background: url(../images/background-game-start.webp) center center/cover no-repeat
 }
 
@@ -638,10 +651,10 @@ h5 {
 
 .game-start__top-button {
     max-width: 628px;
-    margin: 24px auto 39px;
+    margin: 26px auto 42px;
     font-size: 30px;
     height: 100px;
-    padding-left: 24px
+    padding-left: 11px;
 }
 
 .game-start__first-text, .game-start__link, .media__switcher-button {
@@ -672,15 +685,12 @@ h5 {
 }
 
 .game-start__block {
-    padding: 10px;
-    border-radius: 25px;
-    border: 1px solid
+    border: 1px solid rgba(230, 181, 47, 0.50);
 }
 
 .game-start__box {
     padding: 20px;
     background: rgb(0 0 0 / .5);
-    border-radius: 20px
 }
 
 .game-start__list {
@@ -717,7 +727,7 @@ h5 {
 .game-start__buttons {
     display: flex;
     gap: 30px;
-    margin-top: 43px
+    margin-top: 41px
 }
 
 .game-start__button {
@@ -725,13 +735,14 @@ h5 {
 }
 
 .game-start__clients {
-    margin-top: 19px
+    margin-top: 39px;
+    border: 1px solid rgba(230, 181, 47, 0.50);
 }
 
 .game-start__clients .game-start__buttons {
     justify-content: center;
     gap: 0 8px;
-    margin-top: 25px
+    margin-top: 18px
 }
 
 .game-start__gray-button {
@@ -740,7 +751,7 @@ h5 {
 }
 
 .sets {
-    padding: 128px 0 138px;
+    padding: 125px 0 138px;
     background: url(../images/background-sets.webp) center center/cover no-repeat
 }
 
@@ -751,9 +762,7 @@ h5 {
     gap: 30px
 }
 
-.media__slide, .sets__item {
-    border: 1px solid #c6beb3
-}
+
 
 .sets__box {
     display: flex;
@@ -761,7 +770,6 @@ h5 {
     gap: 20px;
     align-items: center;
     padding: 40px 20px;
-    border-radius: 20px
 }
 
 .sets__item:first-child {
@@ -778,6 +786,10 @@ h5 {
 
 .sets__item:last-child .sets__box {
     background: rgb(54 24 90 / .5)
+}
+
+.sets__item-title {
+    padding-left: 10px;
 }
 
 .sets__item-button {
@@ -799,18 +811,18 @@ h5 {
 }
 
 .media {
-    padding-top: 140px
+    padding-top: 137px;
 }
 
 .media__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 2px solid #c6beb3
+    border-bottom: 2px solid var(--gray-color)
 }
 
 .media__switcher-button {
-    padding: 20px 40px 40px;
+    padding:28px 38px 35px;
     font-weight: 700;
     color: rgb(56 56 55 / .5)
 }
@@ -853,12 +865,12 @@ h5 {
 
 .media__swiper-next, .media__swiper-prev {
     flex-shrink: 0;
-    --secondary-color: #C6BEB3
+    --secondary-color: var(--gray-color)
 }
 
 .media__box {
     margin-top: 90px;
-    padding: 40px 40px 53px;
+    padding: 37px 40px 53px;
     border-radius: 25px;
     background: linear-gradient(180deg, #2c1e15 0, #846d4d 100%);
     color: var(--secondary-color);
@@ -866,7 +878,7 @@ h5 {
 }
 
 .media__box-text {
-    margin: 4px auto 0;
+    margin: 5px auto 0;
     max-width: 550px;
     line-height: 150%
 }
@@ -907,27 +919,27 @@ h5 {
 }
 
 .media__bg-image:first-child {
-    left: -39px
+    left: -47px
 }
 
 .media__bg-image:nth-child(2) {
-    right: -39px
+    right: -49px
 }
 
 .media__bg-image:nth-child(3), .media__bg-image:nth-child(4) {
-    bottom: 45px
+    bottom: 51px
 }
 
 .media__bg-image:nth-child(3) {
-    left: 20px
+    left: 12px
 }
 
 .media__bg-image:nth-child(4) {
-    right: 20px
+    right: 12px
 }
 
 .news {
-    padding: 160px 0 140px
+    padding: 142px 0 140px
 }
 
 .news__inner {
@@ -937,7 +949,7 @@ h5 {
 }
 
 .news__title {
-    margin-bottom: 40px
+    margin-bottom: 26px
 }
 
 .news__tg {
@@ -947,12 +959,14 @@ h5 {
 
 .news__block {
     flex-grow: 1;
-    border: 1px solid #c6beb3
 }
 
 .news__block div {
     height: 100%;
-    border-radius: 20px
+}
+
+.news__list {
+    padding-top: 3px;
 }
 
 .news__link {
@@ -960,8 +974,8 @@ h5 {
     padding-right: 29px;
     position: relative;
     padding-bottom: 20px;
-    border-bottom: 1px solid #c6beb3;
-    --secondary-color: #C6BEB3;
+    border-bottom: 1px solid var(--gray-color);
+    --secondary-color: var(--gray-color);
     padding-top: 24px
 }
 
@@ -1000,12 +1014,12 @@ h5 {
 }
 
 .footer {
-    padding: 80px 0;
+    padding:76px 0 80px;
     background: url('../images/background-footer.webp') top left/cover no-repeat
 }
 
 .footer__descr {
-    margin-top: 49px;
+    margin-top: 51px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1027,7 +1041,7 @@ h5 {
 .footer__list {
     display: flex;
     flex-direction: column;
-    gap: 25px
+    gap: 20px
 }
 
 @media (max-width: 1700px) {
@@ -1072,6 +1086,14 @@ h5 {
 
     .logo__img {
         width: 45px
+    }
+
+    .border {
+        padding: 5px
+    }
+
+    .border > * {
+        border-radius: 20px;
     }
 
     .header__inner {
@@ -1167,9 +1189,6 @@ h5 {
         font-size: 12px
     }
 
-    .top__block, .top__date-block {
-        padding: 5px
-    }
 
     .top__right {
         flex-direction: column
@@ -1241,10 +1260,9 @@ h5 {
         margin-top: 0
     }
 
-    .about__box {
+    .about__block.border {
         left: 315px;
         max-height: 400px;
-        border-radius: 25px;
         padding: 10px;
         top: -11px
     }
@@ -1253,7 +1271,7 @@ h5 {
         margin-top: 32px
     }
 
-    .about__box-image {
+    .about__image {
         max-height: 380px;
         border-radius: 20px
     }
@@ -1303,11 +1321,13 @@ h5 {
     }
 
     .line-bottom svg, .line-top svg {
-        min-width: 768px
+        min-width: 768px      ;
+        max-width: 768px
+
     }
 
     .game-start {
-        padding: 61px 9px
+        padding: 60px 9px 81px;
     }
 
     .game-start__content {
@@ -1334,8 +1354,8 @@ h5 {
     .game-start__top-button {
         height: 66px;
         font-size: 20px;
-        margin: 9px auto 20px;
-        padding-right: 21px;
+        margin: 9px auto 19px;
+        padding-left: 0;
         max-width: 379px
     }
 
@@ -1393,15 +1413,25 @@ h5 {
     }
 
     .sets__box {
-        padding: 20px 4px
+        padding: 20px 4px;
+        gap: 22px;
     }
 
     .sets__button {
         max-width: 198px
     }
 
+    .sets__item-title {
+        margin-top: 4px;
+        padding-left: 5px;
+    }
+
     .media {
         padding-top: 58px
+    }
+
+    .media__box .line-top {
+        top: -4px;
     }
 
     .media__switcher-button {
@@ -1455,7 +1485,7 @@ h5 {
     }
 
     .media__box {
-        margin-top: 43px;
+        margin-top: 46px;
         padding: 40px 40px 57px
     }
 
@@ -1464,14 +1494,23 @@ h5 {
         max-width: 500px
     }
 
+    .news {
+        padding: 97px 0 14px;
+    }
+
+
+
+    .news__block.border {
+        padding: 10px;
+    }
+
     .news__inner {
-        display: grid;
-        grid-template-columns:calc(50% - 15px) calc(50% - 15px);
+        grid-template-columns:calc(50% - 7.5px) calc(50% - 7.5px);
         gap: 15px
     }
 
     .news__title {
-        margin-bottom: 20px;
+        margin-bottom: 6px;
         text-wrap: nowrap
     }
 
@@ -1486,6 +1525,10 @@ h5 {
 
     .news__link-name {
         font-size: 18px
+    }
+
+    .footer {
+        padding-top: 92px;
     }
 
     .footer__inner {
@@ -1503,7 +1546,7 @@ h5 {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     h1, h2 {
         font-size: 35px
     }
@@ -1560,6 +1603,11 @@ h5 {
         position: static
     }
 
+    .header__socials {
+        margin-left: 0;
+        margin-top: auto;
+    }
+
     .top {
         background: url(../images/background-t.webp) center center/cover no-repeat;
         padding: 200px 0 40px
@@ -1600,7 +1648,7 @@ h5 {
         gap: 8.9px
     }
 
-    .about__box {
+    .about__block {
         position: static;
         margin-top: 7px
     }
@@ -1684,7 +1732,7 @@ h5 {
     }
 
     .sets {
-        padding: 28px 0 30px
+        padding: 33px 0 43px;
     }
 
     .sets__list {
@@ -1692,19 +1740,23 @@ h5 {
         margin-top: 9px
     }
 
+    .media {
+        padding-top: 28px;
+    }
+
     .media__top {
         flex-direction: column;
         align-items: center;
-        gap: 30px
+        gap: 15px;
     }
 
     .media__switchers {
         width: 100%;
-        display: flex
+        display: flex;
     }
 
     .media__switcher-button {
-        padding: 0 20px 20px;
+        padding: 0 19px 15px;
         flex-grow: 1
     }
 
@@ -1725,7 +1777,21 @@ h5 {
     }
 
     .media__box {
-        padding: 20px 40px 40px
+        padding: 20px 40px 48px;
+        margin-top: 21px;
+    }
+
+    .media__box-text {
+        margin-top: 2px;
+    }
+
+    .news {
+        padding-top: 63px;
+    }
+
+    .news__title {
+        text-align: center;
+        margin-bottom: 13px;
     }
 
     .news__inner {
@@ -1733,11 +1799,12 @@ h5 {
     }
 
     .news__block {
-        height: 310px
+        height: 339px
     }
 
     .footer {
-        background: url("../images/footer-bg-t.webp") top left/cover no-repeat
+        background: url("../images/footer-bg-t.webp") top left/cover no-repeat;
+        padding-top: 42px;
     }
 
     .footer__inner {
@@ -1746,6 +1813,10 @@ h5 {
 
     .footer__socials {
         flex-wrap: wrap
+    }
+
+    .footer__list {
+        gap: 16px;
     }
 }
 
@@ -1786,5 +1857,9 @@ h5 {
 
     .game-start__download .game-start__buttons {
         flex-direction: column
+    }
+
+    .news__title {
+        text-wrap: wrap;
     }
 }
