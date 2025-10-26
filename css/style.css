@@ -1825,6 +1825,10 @@ h5 {
         background: url(../images/background-m.webp) center center/cover no-repeat
     }
 
+    .game-start {
+        background: url(../images/background-game-start-m.webp) center center/cover no-repeat
+    }
+
     .footer {
         background: url("../images/footer-bg-m.webp") center bottom/100% 50% no-repeat
     }
