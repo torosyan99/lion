@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -10,6 +10,7 @@
 
 	<link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'">
 	<link rel="preload" href="lib/swiper/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+
 	<noscript>
 		<link rel="stylesheet" href="/css/fonts.css">
 	</noscript>
@@ -113,9 +114,7 @@
 
 		<div class="lang header__lang">
 			<button class="lang__button">
-				<svg width="20" height="20">
-					<use xlink:href="images/icons.svg#lang-ru"></use>
-				</svg>
+				<img class="lang__button-img" src="./images/ru.svg" alt="ru"/>
 				<span class="lang__active">RU</span>
 				<svg width="14" height="14">
 					<use xlink:href="images/icons.svg#arrow-bottom"></use>
@@ -123,34 +122,29 @@
 			</button>
 			<ul class="lang__list">
 				<li class="lang__list-item">
-					<button class="lang__inner-button">
-						<svg width="20" height="20">
-							<use xlink:href="images/icons.svg#lang-eng"></use>
-						</svg>
+					<button class="lang__inner-button" data-lang="eng">
+						<img src="./images/eng.svg" alt="eng"/>
+
 						<span class="lang__active">ENG</span>
 					</button>
 				</li>
 				<li class="lang__list-item">
-					<button class="lang__inner-button">
-						<svg width="20" height="20">
-							<use xlink:href="images/icons.svg#lang-esp"></use>
-						</svg>
+					<button class="lang__inner-button" data-lang="esp">
+						<img src="./images/esp.svg" alt="esp"/>
+
 						<span class="lang__active">ESP</span>
 					</button>
 				</li>
 				<li class="lang__list-item">
-					<button class="lang__inner-button">
-						<svg width="20" height="20">
-							<use xlink:href="images/icons.svg#lang-pt"></use>
-						</svg>
+					<button class="lang__inner-button" data-lang="pt">
+						<img src="./images/pt.svg" alt="pt"/>
+
 						<span class="lang__active">PT</span>
 					</button>
 				</li>
 				<li class="lang__list-item">
-					<button class="lang__inner-button">
-						<svg width="20" height="20">
-							<use xlink:href="images/icons.svg#lang-ua"></use>
-						</svg>
+					<button class="lang__inner-button" data-lang="ua">
+						<img src="./images/ua.svg" alt="ua"/>
 						<span class="lang__active">UA</span>
 					</button>
 				</li>

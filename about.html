@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="lib/swiper/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+
+	<noscript>
+		<link rel="stylesheet" href="/css/fonts.css">
+	</noscript>
+
+	<script type="text/javascript" src="lib/swiper/swiper.min.js" defer></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="container header__inner">
+		<a class="logo" href="#">
+			<img class="logo__img" fetchpriority=high src="images/logo-small.webp" alt="logo"/>
+		</a>
+		<div class="header__menu">
+			<ul class="header__list">
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#profile-icon"></use>
+						</svg>
+						<span>регистрация</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#file-icon"></use>
+						</svg>
+						<span>ФАЙЛЫ</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#forum-icon"></use>
+						</svg>
+						<span>форум</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#news-icon"></use>
+						</svg>
+						<span>новости</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#support-icon"></use>
+						</svg>
+						<span>ПОМОЩЬ</span>
+					</a>
+				</li>
+			</ul>
+			<button class="circle header__close">
+				<svg width="16" height="16">
+					<use xlink:href="images/icons.svg#close-icon"></use>
+				</svg>
+			</button>
+			<ul class="socials header__socials">
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="19" height="15">
+							<use xlink:href="images/icons.svg#discord-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="18" height="16">
+							<use xlink:href="images/icons.svg#tg-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="20" height="14">
+							<use xlink:href="images/icons.svg#youtube-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="16">
+							<use xlink:href="images/icons.svg#inst-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="17">
+							<use xlink:href="images/icons.svg#tiktok-icon"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lang header__lang">
+			<button class="lang__button">
+				<img class="lang__button-img" src="./images/ru.svg" alt="ru"/>
+				<span class="lang__active">RU</span>
+				<svg width="14" height="14">
+					<use xlink:href="images/icons.svg#arrow-bottom"></use>
+				</svg>
+			</button>
+			<ul class="lang__list">
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="eng">
+						<img src="./images/eng.svg" alt="eng"/>
+
+						<span class="lang__active">ENG</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="esp">
+						<img src="./images/esp.svg" alt="esp"/>
+
+						<span class="lang__active">ESP</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="pt">
+						<img src="./images/pt.svg" alt="pt"/>
+
+						<span class="lang__active">PT</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="ua">
+						<img src="./images/ua.svg" alt="ua"/>
+						<span class="lang__active">UA</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<a class="button header__profile" href="#">
+			<span>КАБИНЕТ</span>
+			<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+		</a>
+
+		<a class="circle header__profile-mobile" href="#">
+			<svg width="16" height="16">
+				<use xlink:href="images/icons.svg#profile-2-icon"></use>
+			</svg>
+		</a>
+		<button class="circle header__menu-button">
+			<svg width="16" height="16">
+				<use xlink:href="images/icons.svg#burger-icon"></use>
+			</svg>
+		</button>
+	</div>
+</header>
+
+
+<main class="main">
+	<section class="about-server bg">
+		<div class="container">
+			<h2 class="about-server__title">о сервере</h2>
+			<div class="switcher">
+				<button class="button switcher__button active" data-index="1">
+					<span>x25</span>
+					<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+				</button>
+				<button class="button switcher__button" data-index="2">
+					<span>x100</span>
+					<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+				</button>
+			</div>
+
+			<div class="switcher-content active" data-index="1">
+				<div class="border about-server__content">
+					<div class="about-server__swiper swiper">
+						<div class="swiper-wrapper about-server__buttons">
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button active" data-index="1">
+									<img class='about-server__icon' src="./images/about-server-1.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Общая информация</span>
+			                     <span>Основная информация</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-2.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Рейты и квесты</span>
+			                     <span>Детали прогресса</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-2.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">геймплей</span>
+			                     <span>Про игровой процесс</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-3.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Саб-класс, нублес</span>
+			                     <span>Изменения и фишки</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-4.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Особенности х25</span>
+			                     <span>ДСерверные нововведения</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-5.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Кланы и замки</span>
+			                     <span>Клановая система, осады</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-6.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Заточка, аугментация</span>
+			                     <span>Шансы и различные детали</span>
+		                     </span>
+								</button>
+							</div>
+
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-2.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Олимпиада</span>
+			                     <span>Информация и правила</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-4.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Баланс</span>
+			                     <span>Актуальные улучшения</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-7.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Эпик и Рейд Боссы</span>
+			                     <span>Респаун и прочие нюансы</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-8.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Ивенты</span>
+			                     <span>Расписание и награды</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-2.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Фишки клиента</span>
+			                     <span>Полезные функции и апгрейд</span>
+		                     </span>
+								</button>
+							</div>
+							<div class="swiper-slide about-server__slide">
+								<button class="about-server__button" data-index="2">
+									<img class='about-server__icon' src="./images/about-server-2.webp" alt="icon"/>
+									<span>
+			                     <span class="about-server__button-value">Сервисы и ALT+</span>
+			                     <span>Услуги и функции</span>
+		                     </span>
+								</button>
+							</div>
+						</div>
+
+					</div>
+					<div class="about-server__box active" data-index="1">
+						<picture>
+							<source srcset="images/about-server-image-m.webp" media="(max-width: 420px)"/>
+							<source srcset="images/about-server-image-t.webp" media="(max-width: 769px)"/>
+							<img class="about-server__image" src="./images/about-server-image.webp" alt="image"/>
+						</picture>
+						<div class="about-server__box-container">
+
+							<div class="about-server__wrapper">
+								<h5 class="about-server__box-title">Открытие сервера х25 - 7-го Ноября в 20:00 GMT +3
+								</h5>
+								<p class="about-server__subtitle">Запуск сервера в режиме ОБТ - 3-го Ноября в 20:00 GMT
+									+3
+								</p>
+							</div>
+							<div class="about-server__line"></div>
+							<p class="about-server__text">ForcePlay.Org — один из лидеров PvP-сегмента Interlude. Наши
+								проекты собирают рекордные
+								онлайны, а сильнейшие кланы выбирали нас для самых зрелищных битв.
+								<br/>
+								<br/>
+								Теперь мы открываем новую главу — вечный Interlude x25 - который соединит в себе
+								сочетание
+								классики и современных решений. Наша команда работает для того, что-бы создать вечный
+								сервер
+								с международной аудиторией и стабильным онлайном! </p>
+							<div class="about-server__line"></div>
+							<div class="about-server__wrapper">
+								<h5>Основная информация и геймплей:</h5>
+								<ul class="about-server__list">
+									<li class="about-server__item">
+										Классический Lineage 2 Interlude Craft-PvP.
+									</li>
+									<li class="about-server__item">
+										Game Shop до B-грейда включительно.
+									</li>
+									<li class="about-server__item">
+										Полноценный баффер с возможностью сохранения профилей.
+
+									</li>
+									<li class="about-server__item">
+										Выбор клиента - Interlude для стариков и прогрессивный Classic.
+									</li>
+									<li class="about-server__item">
+										Dualbox 1+1 с ограничениями (Наведите для деталей).
+
+									</li>
+									<li class="about-server__item">
+										Телепорты до 40 уровня бесплатны.
+									</li>
+									<li class="about-server__item">
+										Mana Potions восстанавливают 1000 МП.
+									</li>
+									<li class="about-server__item">
+										Максимально интересная и сбалансирования концепция которая объединит комьюнити
+										"Java" и "PTS" проектов.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-server__box" data-index="2"></div>
+					<div class="about-server__box" data-index="3"></div>
+					<div class="about-server__box" data-index="4"></div>
+					<div class="about-server__box" data-index="5"></div>
+					<div class="about-server__box" data-index="6"></div>
+				</div>
+			</div>
+
+			<div class="switcher-content" data-index="2" style="height: 800px"></div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container footer__inner">
+		<div class="footer__left">
+			<a class="logo" href="#">
+				<img class="logo__img" fetchpriority=high src="images/logo-small.webp" alt="logo"/>
+			</a>
+
+			<div class="footer__descr">
+				<span>Dion Town © 2025</span>
+				<span>305514477, Georgia</span>
+			</div>
+
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Важное</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Главная </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Описание сервера </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Новости & Обновления </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Форум</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer__block">
+			<p class="footer__block-top">Аккаунт</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Создать Аккаунт </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Скачать Файлы </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Скачать Файлы </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Восстановить Пароль</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Для пользователей</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Пользовательское Соглашение </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Политика Конфиденциальности </a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Поддержка</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Задать вопрос </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Написать на почту </a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer__block">
+			<p class="footer__block-top">Подпишись</p>
+			<ul class="socials footer__socials">
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="19" height="15">
+							<use xlink:href="images/icons.svg#discord-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="18" height="16">
+							<use xlink:href="images/icons.svg#tg-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="20" height="14">
+							<use xlink:href="images/icons.svg#youtube-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="16">
+							<use xlink:href="images/icons.svg#inst-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="17">
+							<use xlink:href="images/icons.svg#tiktok-icon"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
+

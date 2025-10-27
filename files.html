@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="lib/swiper/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/css/fonts.css">
+	</noscript>
+
+	<script type="text/javascript" src="lib/swiper/swiper.min.js" defer></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
+</head>
+<body>
+
+
+<header class="header">
+	<div class="container header__inner">
+		<a class="logo" href="#">
+			<img class="logo__img" fetchpriority=high src="images/logo-small.webp" alt="logo"/>
+		</a>
+		<div class="header__menu">
+			<ul class="header__list">
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#profile-icon"></use>
+						</svg>
+						<span>регистрация</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#file-icon"></use>
+						</svg>
+						<span>ФАЙЛЫ</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#forum-icon"></use>
+						</svg>
+						<span>форум</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#news-icon"></use>
+						</svg>
+						<span>новости</span>
+					</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__link" href="#">
+						<svg width="20" height="20">
+							<use xlink:href="images/icons.svg#support-icon"></use>
+						</svg>
+						<span>ПОМОЩЬ</span>
+					</a>
+				</li>
+			</ul>
+			<button class="circle header__close">
+				<svg width="16" height="16">
+					<use xlink:href="images/icons.svg#close-icon"></use>
+				</svg>
+			</button>
+			<ul class="socials header__socials">
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="19" height="15">
+							<use xlink:href="images/icons.svg#discord-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="18" height="16">
+							<use xlink:href="images/icons.svg#tg-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="20" height="14">
+							<use xlink:href="images/icons.svg#youtube-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="16">
+							<use xlink:href="images/icons.svg#inst-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="17">
+							<use xlink:href="images/icons.svg#tiktok-icon"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lang header__lang">
+			<button class="lang__button">
+				<img class="lang__button-img" src="./images/ru.svg" alt="ru"/>
+				<span class="lang__active">RU</span>
+				<svg width="14" height="14">
+					<use xlink:href="images/icons.svg#arrow-bottom"></use>
+				</svg>
+			</button>
+			<ul class="lang__list">
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="eng">
+						<img src="./images/eng.svg" alt="eng"/>
+
+						<span class="lang__active">ENG</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="esp">
+						<img src="./images/esp.svg" alt="esp"/>
+
+						<span class="lang__active">ESP</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="pt">
+						<img src="./images/pt.svg" alt="pt"/>
+
+						<span class="lang__active">PT</span>
+					</button>
+				</li>
+				<li class="lang__list-item">
+					<button class="lang__inner-button" data-lang="ua">
+						<img src="./images/ua.svg" alt="ua"/>
+						<span class="lang__active">UA</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<a class="button header__profile" href="#">
+			<span>КАБИНЕТ</span>
+			<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+		</a>
+
+		<a class="circle header__profile-mobile" href="#">
+			<svg width="16" height="16">
+				<use xlink:href="images/icons.svg#profile-2-icon"></use>
+			</svg>
+		</a>
+		<button class="circle header__menu-button">
+			<svg width="16" height="16">
+				<use xlink:href="images/icons.svg#burger-icon"></use>
+			</svg>
+		</button>
+	</div>
+</header>
+
+
+<main class="main">
+	<section class="bg files">
+		<div class="container">
+
+			<h2 class="files__title">файлы</h2>
+			<div class="switcher">
+				<button class="button switcher__button active" data-index="1">
+					<span>Interlude</span>
+					<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+				</button>
+				<button class="button switcher__button" data-index="2">
+					<span>Classic</span>
+					<img class="button__bg" src="images/orange.webp" alt="button-bg"/>
+				</button>
+			</div>
+
+			<div class="switcher-content active" data-index="1">
+				<div class="files__content" >
+					<div class="border files__block">
+						<div class="files__box">
+							<div class="files__wrapper">
+								<h5>шаг 1</h5>
+								<p class="files__box-subtitle">Регистрация игрового аккаунта</p>
+								<p class="files__box-text">Чтобы войти в игру, вам нужно создать игровой аккаунт. Также
+									после регистрации станут доступны дополнительные функции личного кабинета.</p>
+							</div>
+							<a class="button files__box-button white" href="#">
+								<span>создать аккаунт</span>
+								<img class="button__bg" src="images/green-3.webp" alt="button-bg"/>
+							</a>
+						</div>
+
+					</div>
+					<div class="border files__block">
+						<div class="files__box">
+							<div class="files__wrapper">
+								<h5>шаг 2</h5>
+								<p class="files__box-subtitle">игровой клиент</p>
+								<p class="files__box-text">После того как Вы создали аккаунт, Вам необходимо
+									оригинальный
+									Interlude клиент.</p>
+							</div>
+							<ul class="files__list">
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/google.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mega.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/media.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mail.webp" alt="google"/>
+									</a>
+								</li>
+							</ul>
+							<div class="files__box-title">
+								<div class="files__line"></div>
+								<h6>игровой патч</h6>
+								<div class="files__line"></div>
+							</div>
+							<p class="files__box-text">После подготовки игрового клиента Interlude, обновите его
+								последним
+								патчем.</p>
+							<ul class="files__list">
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/google.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mega.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/media.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mail.webp" alt="google"/>
+									</a>
+								</li>
+							</ul>
+							<div class="files__wrapper">
+								<h6>дополнительные патчи</h6>
+								<a class="files__link" href="#">Клановый патч от ForcePlay</a>
+							</div>
+							<div class="files__box-title">
+								<div class="files__line"></div>
+								<h6>updater</h6>
+								<div class="files__line"></div>
+							</div>
+							<p class="files__box-text">Так-же вы можете использовать наш игровой апдейтер для обновления
+								файлов до актуальной версии.</p>
+							<ul class="files__list">
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/google.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mega.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/media.webp" alt="google"/>
+									</a>
+								</li>
+								<li class="files__item border">
+									<a class="files__item-link" href="#">
+										<img class="files__item-icon" src="images/mail.webp" alt="google"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="border files__block">
+						<div class="files__box">
+							<div class="files__wrapper">
+								<h5>Информация</h5>
+								<p class="files__box-subtitle">Установлен ли у вас последний софт для комфортной
+									игры?</p>
+								<p class="files__box-text">Чтобы наслаждаться игрой без лагов и вылетов, важно следить
+									за актуальностью драйверов и программного обеспечения.</p>
+								<ul class="files__list">
+									<li class="files__item amd border">
+										<a class="files__item-link" href="#">
+											<img class="files__item-icon" src="images/amd.webp" alt="google"/>
+										</a>
+									</li>
+									<li class="files__item nvidia border">
+										<a class="files__item-link" href="#">
+											<img class="files__item-icon" src="images/nvidia.webp" alt="google"/>
+										</a>
+									</li>
+									<li class="files__item directx border">
+										<a class="files__item-link" href="#">
+											<img class="files__item-icon" src="images/directx.webp" alt="google"/>
+										</a>
+									</li>
+									<li class="files__item cleaner border">
+										<a class="files__item-link" href="#">
+											<img class="files__item-icon" src="images/cleaner.webp" alt="google"/>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="files__box-title">
+								<div class="files__line"></div>
+								<h6>у вас проблемы со входом в игру?</h6>
+								<div class="files__line"></div>
+							</div>
+							<p class="files__box-text">Если у вас любая другая проблема - обратитесь к нам, мы вам
+								поможем</p>
+							<div class="files__buttons">
+								<a class="button white files__button" href="#">
+									<span>Задать вопрос</span>
+									<img class="button__bg" src="images/orange-2.webp" alt="button-bg"/>
+								</a>
+								<a class="button white files__button" href="#">
+									<span>ЧАВО</span>
+									<img class="button__bg" src="images/green-3.webp" alt="button-bg"/>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="switcher-content"  data-index="2">
+				<div class="files__content">
+					<div class="border files__block">
+
+					</div>
+					<div class="border files__block" style="height: 800px">
+
+					</div>
+					<div class="border files__block">
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container footer__inner">
+		<div class="footer__left">
+			<a class="logo" href="#">
+				<img class="logo__img" fetchpriority=high src="images/logo-small.webp" alt="logo"/>
+			</a>
+
+			<div class="footer__descr">
+				<span>Dion Town © 2025</span>
+				<span>305514477, Georgia</span>
+			</div>
+
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Важное</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Главная </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Описание сервера </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Новости & Обновления </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Форум</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer__block">
+			<p class="footer__block-top">Аккаунт</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Создать Аккаунт </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Скачать Файлы </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Скачать Файлы </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Восстановить Пароль</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Для пользователей</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Пользовательское Соглашение </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Политика Конфиденциальности </a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__block">
+			<p class="footer__block-top">Поддержка</p>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">Задать вопрос </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Написать на почту </a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer__block">
+			<p class="footer__block-top">Подпишись</p>
+			<ul class="socials footer__socials">
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="19" height="15">
+							<use xlink:href="images/icons.svg#discord-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="18" height="16">
+							<use xlink:href="images/icons.svg#tg-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="20" height="14">
+							<use xlink:href="images/icons.svg#youtube-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="16">
+							<use xlink:href="images/icons.svg#inst-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link circle" href="#">
+						<svg width="16" height="17">
+							<use xlink:href="images/icons.svg#tiktok-icon"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
+
