@@ -896,7 +896,6 @@ h5 {
     color: var(--secondary-color);
     z-index: 10;
     position: relative;
-
 }
 
 .media__box-text {
@@ -949,17 +948,21 @@ h5 {
     right: -208px
 }
 
-.media__box .media__bg-image:nth-child(1),
-.media__box .media__bg-image:nth-child(2) {
+.media__container .media__bg-image:nth-child(1),
+.media__container .media__bg-image:nth-child(2) {
     bottom: 43px;
 }
 
-.media__box .media__bg-image:nth-child(1) {
+.media__container .media__bg-image:nth-child(1) {
     left: -234px;
 }
 
-.media__box .media__bg-image:nth-child(2) {
+.media__container .media__bg-image:nth-child(2) {
     right: -234px
+}
+
+.media__container {
+    position: relative;
 }
 
 .news {
@@ -1383,16 +1386,16 @@ h5 {
         right: -90px
     }
 
-    .media__box .media__bg-image:nth-child(1),
-    .media__box .media__bg-image:nth-child(2) {
-        bottom: 10px ;
+    .media__container .media__bg-image:nth-child(1),
+    .media__container .media__bg-image:nth-child(2) {
+        bottom: -123px ;
     }
 
-    .media__box .media__bg-image:nth-child(1) {
+    .media__container .media__bg-image:nth-child(1) {
         left: -124px;
     }
 
-    .media__box .media__bg-image:nth-child(2) {
+    .media__container .media__bg-image:nth-child(2) {
         right: -124px
     }
 
@@ -1738,6 +1741,7 @@ h5 {
         margin-top: 21px
     }
 
+
     .game-start__clients .game-start__buttons {
         margin-top: 20px
     }
@@ -1806,25 +1810,33 @@ h5 {
         height: 100px
     }
 
-    .media__bg-image:first-child, .media__bg-image:nth-child(2) {
+    .media__swiper-wrapper .media__bg-image:first-child,
+    .media__swiper-wrapper .media__bg-image:nth-child(2) {
         top: inherit;
-        bottom: -50px;
+        bottom: -60px;
     }
 
-    .media__bg-image:first-child {
+
+    .media__swiper-wrapper .media__bg-image:first-child {
         left: -33px
     }
 
-    .media__bg-image:nth-child(2) {
+    .media__swiper-wrapper .media__bg-image:nth-child(2) {
         right: -40px
     }
 
-    .media__bg-image:nth-child(3) {
-        left: -2px
+    .media__container .media__bg-image:first-child,
+    .media__container .media__bg-image:nth-child(2) {
+        top: inherit;
+        bottom: -73px;
     }
 
-    .media__bg-image:nth-child(4) {
-        right: -2px
+    .media__container .media__bg-image:first-child {
+        left: -7px
+    }
+
+    .media__container .media__bg-image:nth-child(2) {
+        right: -7px
     }
 
 
